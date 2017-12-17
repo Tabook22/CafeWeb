@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="col-md-12">
+    <form #admfrm="ngForm" novalidate (ngSubmit)="save(admfrm.value, admfrm.valid)" class="form-group">
+      <!-- Name Section -->
+      <div class="form-group">
+        <label for="Name">Admin Name:</label>
+        <input name="Name" [(ngModel)]="admin.Name" #Name="ngModel" required minlength="8" pattern="[a-zA-Z][a-zA-Z ]+" class="form-control">
+        <div [hidden]="Name.valid || (Name.pristine && !admfrm.submitted)" class="alert alert-danger">
+          <div [hidden]="!Name.hasError('required')">
+            Admin Name is required !
+          </div>
+          <div [hidden]="!Name.hasError('minlength')">
+            Admin Name minmum length is 5 characters
+          </div>
+          <div [hidden]="!Name.hasError('pattern')">
+            Letters only allowed
+          </div>
+        </div>
+      </div>
+      <!-- Password Section -->
+      <div>
+        <label for="Password">Password:</label>
+        <input name="Password" [(ngModel)]="admin.Password" #Password="ngModel" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z])\S{8,15}$"
+          class="form-control">
+        <div [hidden]="Password.valid || (Password.pristine && !admfrm.submitted)" class="alert alert-danger">
+          <div [hidden]="!Password.hasError('required')">
+            Password is required !
+          </div>
+          <div [hidden]="!Password.hasError('minlength')">
+            Pasword minmum length is 8 characters
+          </div>
+          <div [hidden]="!Password.hasError('pattern')">
+            At least one lower case letter, At least one upper case letter, At least special character, At least one number, No White
+            Space
+          </div>
+        </div>
+        <!-- Email Section -->
+      </div>
+      <!-- Email Section -->
+      <div class="form-group">
+        <label for="Email">E-mail:</label>
+        <input name="Email" [(ngModel)]="admin.Email" #Email="ngModel" required pattern="^[a-z0-9][-a-z0-9.!#$%&'*+-=?^_`{|}~\/]+@([-a-z0-9]+\.)+[a-z]{2,5}$" class="form-control">
+        <div [hidden]="Email.valid || (Email.pristine && !admfrm.submitted)" class="alert alert-danger">
+          <div [hidden]="!Email.hasError('required')">
+            E-mail is required !
+          </div>
+          <div [hidden]="!Email.hasError('pattern')">
+            Email not correct!
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary">Submit</button>
+    </form>
+    {{admin | json}}
+  </div>
+</div>
