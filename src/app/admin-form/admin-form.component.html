@@ -49,6 +49,26 @@
           </div>
         </div>
       </div>
+      <!-- Phone section -->
+      <div class="form-group">
+          <label for="Phone">Phone:</label>
+          <input name="Phone" [(ngModel)]="admin.Phone" #Phone="ngModel" required minlength="8" maxlength="10" pattern="[0-9]+" class="form-control">
+          <div [hidden]="Phone.valid || (Phone.pristine && Phone.untouched && !admfrm.submitted)" class="alert alert-danger">
+            <div [hidden]="!Phone.hasError('required')">
+             phone number is required
+            </div>
+            <div [hidden]="!Phone.hasError('minlength')">
+               minmum length is 8 Numbers
+            </div>
+            <div [hidden]="!Phone.hasError('maclength')">
+                maximum length is 10 Numbers
+             </div>
+            <div [hidden]="!Phone.hasError('pattern')">
+              Numbers only allowed
+            </div>
+          </div>
+        </div>
+        <!-- button section -->
       <button class="btn btn-primary">Submit</button>
     </form>
     {{admin | json}}
