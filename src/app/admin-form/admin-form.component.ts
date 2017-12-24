@@ -3,7 +3,7 @@ import { Admin } from './admin';
 @Component({
   selector: 'admin-form',
   templateUrl: './admin-form.component.html',
-  styleUrls: ['./admin-form.component.css']
+  styleUrls: ['./admin-form.component.css'],
 })
 export class AdminFormComponent implements OnInit {
 public admin: Admin; // our Model

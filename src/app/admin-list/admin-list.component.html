@@ -1,0 +1,15 @@
+<div class="row">
+  <h1>Admin List</h1>
+  <ul *ngFor="let admin of adminLst">
+    <li>{{admin.name}}</li>
+  </ul>
+  <div>
+    <button (click)="getValues()">Load values</button>
+    <ul *ngFor="let s of value">
+      <li>
+        {{s.name}}
+      </li>
+    </ul>
+    <!-- {{ value | json }} -->
+  </div>
+</div>

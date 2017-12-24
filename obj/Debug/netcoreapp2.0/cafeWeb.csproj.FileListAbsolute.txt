@@ -1,0 +1,10 @@
+c:\Users\HP\Desktop\myWorks\CafePro\cafeWeb\bin\Debug\netcoreapp2.0\cafeWeb.deps.json
+c:\Users\HP\Desktop\myWorks\CafePro\cafeWeb\bin\Debug\netcoreapp2.0\cafeWeb.runtimeconfig.json
+c:\Users\HP\Desktop\myWorks\CafePro\cafeWeb\bin\Debug\netcoreapp2.0\cafeWeb.runtimeconfig.dev.json
+c:\Users\HP\Desktop\myWorks\CafePro\cafeWeb\bin\Debug\netcoreapp2.0\cafeWeb.dll
+c:\Users\HP\Desktop\myWorks\CafePro\cafeWeb\bin\Debug\netcoreapp2.0\cafeWeb.pdb
+c:\Users\HP\Desktop\myWorks\CafePro\cafeWeb\obj\Debug\netcoreapp2.0\cafeWeb.csproj.CoreCompileInputs.cache
+c:\Users\HP\Desktop\myWorks\CafePro\cafeWeb\obj\Debug\netcoreapp2.0\cafeWeb.AssemblyInfoInputs.cache
+c:\Users\HP\Desktop\myWorks\CafePro\cafeWeb\obj\Debug\netcoreapp2.0\cafeWeb.AssemblyInfo.cs
+c:\Users\HP\Desktop\myWorks\CafePro\cafeWeb\obj\Debug\netcoreapp2.0\cafeWeb.dll
+c:\Users\HP\Desktop\myWorks\CafePro\cafeWeb\obj\Debug\netcoreapp2.0\cafeWeb.pdb
